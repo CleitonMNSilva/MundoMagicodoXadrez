@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 720" role="img" aria-labelledby="t d">
+<title id="t">Castelo do Reino Encantado</title><desc id="d">Castelo de fantasia com torres azuis, colinas verdes, nuvens e flores.</desc>
+<defs>
+ <linearGradient id="sky" x2="0" y2="1"><stop stop-color="#168bd4"/><stop offset=".58" stop-color="#8bd7f5"/><stop offset="1" stop-color="#e7fbff"/></linearGradient>
+ <linearGradient id="stone" x2="0" y2="1"><stop stop-color="#fff2cb"/><stop offset="1" stop-color="#d4a86d"/></linearGradient>
+ <linearGradient id="roof" x2="0" y2="1"><stop stop-color="#5a8ee8"/><stop offset="1" stop-color="#3153a5"/></linearGradient>
+ <linearGradient id="hill" x2="0" y2="1"><stop stop-color="#8edb68"/><stop offset="1" stop-color="#39964a"/></linearGradient>
+ <filter id="shadow" x="-20%" y="-20%" width="140%" height="150%"><feGaussianBlur stdDeviation="12"/></filter>
+</defs>
+<rect width="1600" height="720" fill="url(#sky)"/>
+<circle cx="1320" cy="128" r="62" fill="#fff5ad" opacity=".95"/><g stroke="#fff5ad" stroke-width="9" stroke-linecap="round" opacity=".8"><path d="M1320 36v-25M1320 245v-25M1228 128h-25M1437 128h-25M1255 63l-19-19M1405 211l-19-19M1385 63l19-19M1235 211l19-19"/></g>
+<g fill="#fff" opacity=".75"><path d="M140 150c-40-50 22-93 65-58 24-62 110-42 107 17 55-4 73 57 27 79H164c-40 0-56-17-24-38z"/><path d="M1040 212c-35-40 13-77 52-51 23-51 91-36 91 15 45-4 59 43 22 62h-137c-33 0-48-13-28-26z"/></g>
+<path d="M0 505Q210 350 420 492T850 454T1260 460T1600 425V720H0Z" fill="#80cb64"/>
+<path d="M0 574Q280 430 560 572T1080 530T1600 555V720H0Z" fill="url(#hill)"/>
+<ellipse cx="840" cy="590" rx="430" ry="44" fill="#245f3d" opacity=".23" filter="url(#shadow)"/>
+<!-- castle central body -->
+<g stroke="#9f744a" stroke-width="8" stroke-linejoin="round">
+ <path d="M560 570V330l92-74 92 74v240Z" fill="url(#stone)"/>
+ <path d="M690 570V290l112-90 112 90v280Z" fill="url(#stone)"/>
+ <path d="M870 570V330l92-74 92 74v240Z" fill="url(#stone)"/>
+ <path d="M500 390h620v180H500Z" fill="#f6dba5"/>
+ <path d="M478 385h125v-118h-125Z" fill="url(#stone)"/><path d="M462 268l78-82 78 82Z" fill="url(#roof)"/>
+ <path d="M932 385h125V267H932Z" fill="url(#stone)"/><path d="M916 268l78-82 78 82Z" fill="url(#roof)"/>
+ <path d="M674 303h256v267H674Z" fill="#f1d19a"/>
+ <path d="M770 570V458c0-57 62-57 62 0v112Z" fill="#75503e"/>
+</g>
+<!-- battlements -->
+<g fill="#f9e7bc" stroke="#9f744a" stroke-width="6"><path d="M492 378v-28h25v-25h26v25h25v-25h26v25h25v28Z"/><path d="M664 284v-28h26v-25h26v25h26v-25h26v25h26v-25h26v25h26v-25h26v25h26v28Z"/><path d="M920 378v-28h25v-25h26v25h25v-25h26v25h25v28Z"/></g>
+<!-- windows -->
+<g fill="#79cbed" stroke="#956d49" stroke-width="7"><path d="M608 410v-57c0-31 48-31 48 0v57Z"/><path d="M743 390v-66c0-36 58-36 58 0v66Z"/><path d="M871 410v-57c0-31 48-31 48 0v57Z"/><path d="M522 350v-43c0-24 38-24 38 0v43Z"/><path d="M974 350v-43c0-24 38-24 38 0v43Z"/></g>
+<g stroke="#fff4d6" stroke-width="5"><path d="M632 353v57M608 380h48M772 324v66M743 357h58M895 353v57M871 380h48"/></g>
+<!-- flags -->
+<g stroke="#795a4b" stroke-width="7" stroke-linecap="round"><path d="M540 190v-80M995 184v-88M800 166V70"/></g><path d="M540 110l68 18-68 28Z" fill="#ffca48"/><path d="M995 96l70 19-70 29Z" fill="#f36b72"/><path d="M800 70l73 17-73 29Z" fill="#5ad0b3"/>
+<!-- pathway and garden -->
+<path d="M755 570Q800 590 850 570Q1000 625 1130 720H510Q660 635 755 570Z" fill="#e7c38a" opacity=".95"/>
+<g fill="#fff" opacity=".75"><circle cx="220" cy="560" r="8"/><circle cx="350" cy="620" r="6"/><circle cx="1260" cy="600" r="8"/><circle cx="1450" cy="520" r="7"/></g>
+<g stroke="#2e8b50" stroke-width="8" stroke-linecap="round"><path d="M160 720v-90M135 720v-62M1410 720v-95M1450 720v-60"/></g>
+<g fill="#ffde62"><circle cx="160" cy="620" r="13"/><circle cx="1410" cy="610" r="13"/><circle cx="1450" cy="650" r="11"/></g><g fill="#fb8db4"><circle cx="130" cy="660" r="10"/><circle cx="1440" cy="670" r="10"/><circle cx="180" cy="680" r="9"/></g>
+</svg>

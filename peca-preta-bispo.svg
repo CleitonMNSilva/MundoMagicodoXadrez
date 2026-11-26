@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128" role="img" aria-label="Peça de xadrez bispo preta">
+<defs><linearGradient id="g" x2="0" y2="1"><stop stop-color="#25324b"/><stop offset="1" stop-color="#25324b" stop-opacity=".84"/></linearGradient></defs>
+<g fill="url(#g)" stroke="#fff4d7" stroke-width="5" stroke-linejoin="round" stroke-linecap="round"><path d="M64 15Q91 37 82 58Q78 70 64 75Q50 70 46 58Q37 37 64 15Z"/><path d="M58 22l18 25" stroke="currentColor" stroke-width="7" stroke-linecap="round"/><path d="M48 76h32l7 17H41Z"/><path d="M30 94h68v11H30Z"/><path d="M24 108h80v11H24Z"/></g>
+<path d="M34 113h60" stroke="#f2c14e" stroke-width="3.5" stroke-linecap="round"/>
+</svg>
