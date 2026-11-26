@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="Content-Security-Policy" content="default-src 'none'; img-src 'self' data: file:; style-src 'self' file: 'unsafe-inline'; script-src 'self' file:; base-uri 'none'; form-action 'none'">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%270 0 100 100%27%3E%3Ctext y=%27.9em%27 font-size=%2790%27%3E%E2%99%9E%3C/text%3E%3C/svg%3E">
+
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="description" content="Aprenda xadrez brincando! Página infantil com personagens, historinhas e quiz, para crianças.">
+<meta name="theme-color" content="#2f7d1b">
+<meta name="referrer" content="no-referrer">
+<title>Mundo Mágico do Xadrez</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<nav><a href="#jogar">Jogar</a><a href="#historia">História</a><a href="#reino">Reino</a><a href="#pecas">Peças</a><a href="#historias">Historinhas</a><a href="#quiz">Quiz</a><a href="#privacidade">Privacidade</a><button id="som" aria-label="Ligar ou desligar a voz do ajudante">🔊 Voz</button></nav>
+
+<header class="hero">
+
+<h1>Mundo Mágico do Xadrez</h1>
+<p>Vamos aprender xadrez brincando e jogar contra os nossos amigos!</p>
+<a class="btn" href="#jogar">Quero jogar!</a>
+<div class="trust">✅ Sem cadastro · ✅ Sem anúncios</div>
+<div class="chars"><figure><img data-c="peao" alt="Peão Valente"><figcaption>Peão Valente</figcaption></figure><figure><img data-c="rainha" alt="Rainha Estrela"><figcaption>Rainha Estrela</figcaption></figure><figure><img data-c="rei" alt="Rei Sábio"><figcaption>Rei Sábio</figcaption></figure><figure><img data-c="bispo" alt="Bispo Sorriso"><figcaption>Bispo Sorriso</figcaption></figure><figure><img data-c="cavalo" alt="Cavalo Faísca"><figcaption>Cavalo Faísca</figcaption></figure><figure><img data-c="torre" alt="Torre Forte"><figcaption>Torre Forte</figcaption></figure></div>
+</header>
+
+<section id="jogar">
+<h2>♟ Jogue contra o computador</h2>
+<p class="sub">Escolha um amigo para jogar com você. Você joga com as peças brancas e começa!</p>
+<div class="opp" id="opp"></div>
+<div class="play">
+<div class="pwrap"><div class="clk" id="clkB" style="visibility:hidden">⚫</div><div id="pg" class="bd" aria-label="Tabuleiro para jogar"></div><div class="clk" id="clkW" style="visibility:hidden">⚪</div>
+<div id="pend" hidden><img id="pimg" alt=""><h3 id="ptxt"></h3><button class="btn" id="pagain">Jogar de novo</button></div></div>
+<div class="pside"><div class="bub"><img id="pav" alt=""><div id="psay" aria-live="polite"></div></div>
+<label>⏱ Tempo: <select id="ptime"><option value="0">Sem tempo</option><option value="180">3 minutos</option><option value="300">5 minutos</option><option value="600">10 minutos</option></select></label>
+<div class="pbt"><button class="btn s" id="pnew">🔄 Novo jogo</button> <button class="btn s" id="phint">💡 Dica</button> <button class="btn s" id="pundo">↩ Voltar jogada</button></div>
+<p class="note">Toque numa peça sua e depois na casa para onde quer ir. Se o peão chegar ao outro lado, ele vira rainha!</p></div>
+</div></section>
+<section id="historia">
+<h2>📜 A história do xadrez</h2>
+<p class="sub">Leia os quadrinhos!</p>
+<div class="hq">
+<article class="q" data-c="rei" style="--bg:linear-gradient(#b9f0a8,#5bbf5b)"><span class="n">1</span><div class="leg">Índia · há 1.500 anos</div><div class="dec" aria-hidden="true">🐘🌴</div><img class="qi" data-c="rei" alt=""><div class="bal">Há 1.500 anos, na Índia, nasceu um jogo com elefantes e cavalos!</div></article>
+<article class="q" data-c="bispo" style="--bg:linear-gradient(#ffe9b0,#f2b45c)"><span class="n">2</span><div class="leg">Pérsia</div><div class="dec" aria-hidden="true">🕌🌙🐪</div><img class="qi" data-c="bispo" alt=""><div class="bal">“Xá mate!” quer dizer “o rei não tem saída”. Daí vem o xeque-mate!</div></article>
+<article class="q" data-c="rainha" style="--bg:linear-gradient(#cfe3ff,#8fb8e8)"><span class="n">3</span><div class="leg">Europa</div><div class="dec" aria-hidden="true">👑🏰</div><img class="qi" data-c="rainha" alt=""><div class="bal">Na Europa, eu virei a peça mais forte! Agora ando bem longe!</div></article>
+<article class="q" data-c="torre" style="--bg:linear-gradient(#5b7cff,#1d2b53)"><span class="n">4</span><div class="leg">Hoje em dia</div><div class="dec" aria-hidden="true">🤖💡💻</div><img class="qi" data-c="torre" alt=""><div class="bal">Um computador ganhou de um campeão! Hoje crianças e computadores brincam juntos!</div></article>
+<article class="q" data-c="peao" style="--bg:linear-gradient(#ffd6e8,#ff9ec7)"><span class="n">5</span><div class="leg">E agora?</div><div class="dec" aria-hidden="true">🎉♟️</div><img class="qi" data-c="peao" alt=""><div class="bal">Agora é a sua vez! Vamos jogar?</div></article>
+</div>
+<p style="text-align:center;margin-top:20px"><a class="btn" href="#jogar">Jogar agora!</a></p>
+</section>
+
+<section id="reino" style="padding-top:0">
+<h2>📖 O reino bagunçado</h2>
+<p class="sub">Uma historinha do Xadrez Encantado.</p>
+<div class="hq">
+<article class="q" data-c="rei" style="--bg:linear-gradient(#d8c3a5,#8c6b4a)"><span class="n">1</span><div class="leg">O salão do trono</div><div class="dec" aria-hidden="true">🏰🌀</div><img class="qi" data-c="rei" alt=""><div class="bal">Que bagunça! As torres tombam, os cavalos pulam e os peões rolam!</div></article>
+<article class="q" data-c="rainha" style="--bg:linear-gradient(#b497ff,#6c4bff)"><span class="n">2</span><div class="leg">A ideia da rainha</div><div class="dec" aria-hidden="true">💡✨</div><img class="qi" data-c="rainha" alt=""><div class="bal">Tenho uma ideia! Cada um tem um talento. Vamos juntar todos!</div></article>
+<article class="q" data-c="peao" style="--bg:linear-gradient(#ffe680,#ffb347)"><span class="n">3</span><div class="leg">Nasceu o xadrez!</div><div class="dec" aria-hidden="true">🎉♟️</div><img class="qi" data-c="peao" alt=""><div class="bal">Cada peça achou seu lugar e seu jeito de andar. Agora é só brincar!</div></article>
+</div>
+</section>
+<section id="pecas" style="padding-top:0">
+<h2>♟️ Conheça as peças</h2>
+<p class="sub">No reino do xadrez, o Rei Sábio e a Rainha Estrela chamaram todo mundo. Cada peça tem seu jeitinho de andar!</p>
+<div class="grid">
+<div class="card"><img class="pc" data-c="rei" alt="Rei"><h3>Rei Sábio</h3><p>Anda uma casinha. É o mais importante!</p></div>
+<div class="card"><img class="pc" data-c="rainha" alt="Rainha"><h3>Rainha Estrela</h3><p>Anda bem longe para todo lado. A mais forte!</p></div>
+<div class="card"><img class="pc" data-c="torre" alt="Torre"><h3>Torre Forte</h3><p>Corre reto, como um trenzinho. 🚂</p></div>
+<div class="card"><img class="pc" data-c="bispo" alt="Bispo"><h3>Bispo Sorriso</h3><p>Desliza de lado, como um escorregador. 🛝</p></div>
+<div class="card"><img class="pc" data-c="cavalo" alt="Cavalo"><h3>Cavalo Faísca</h3><p>Pula em “L” por cima de todo mundo! 🐴</p></div>
+<div class="card"><img class="pc" data-c="peao" alt="Peão"><h3>Peão Valente</h3><p>Anda para frente, devagarinho. Se chegar ao outro lado, vira rainha! 👸</p></div>
+</div>
+<div class="card" style="margin-top:20px"><h3>⭐ 3 regras de ouro</h3><ul><li>Comece pelo <b>centro</b> do tabuleiro.</li><li>Leve cavalos e bispos para passear.</li><li>Antes de mexer, olhe: <b>minha peça está segura?</b></li></ul></div>
+</section>
+
+<section id="historias" style="padding-top:0">
+<h2>🎬 Historinhas e aberturas</h2>
+<p class="sub">Escolha uma historinha e veja como as partidas começam!</p>
+<div class="story">
+<div id="board" class="bd" aria-label="Tabuleiro de xadrez"></div>
+<div>
+<div class="tabs" id="tabs"></div>
+<div id="say" aria-live="polite"></div>
+<button class="btn s" id="prev">⬅ Voltar</button> <button class="btn s" id="next">Próxima jogada ➡</button>
+</div>
+</div>
+<div class="card" style="margin-top:22px"><h3>🏆 A Partida Imortal</h3><p>Um jogador deu de presente quase todas as peças. Mas com um plano esperto, deu xeque-mate! Lição: pensar bem vale mais que ter muitas peças.</p></div>
+</section>
+
+<section id="quiz" style="padding-top:0">
+<h2>🧠 Quiz do campeão</h2>
+<p class="sub" id="qscore">Responda e ganhe estrelas!</p>
+<div class="card" style="max-width:640px;margin:auto"><h3 id="qq"></h3><div id="qo"></div><div style="text-align:center;margin-top:10px"><button class="btn s" id="qn" hidden>Próxima ➡</button></div></div>
+</section>
+
+
+<section id="privacidade" style="padding-top:0">
+<h2>🔒 Privacidade e segurança</h2>
+<p class="sub">Um recado para mães, pais e responsáveis.</p>
+<div class="grid">
+<div class="card"><div class="e">🚫</div><h3>Sem cadastro</h3><p>A criança não precisa informar nome, e-mail, idade ou foto para brincar.</p></div>
+<div class="card"><div class="e">🍪</div><h3>Sem anúncios e rastreio</h3><p>Esta página não usa anúncios, cookies de propaganda nem guarda o que a criança faz. O jogo contra o computador acontece no próprio aparelho.</p></div>
+<div class="card"><div class="e">💬</div><h3>Conversa com o Peão Valente</h3><p>As perguntas prontas ficam só na página. Para digitar ou falar, um adulto precisa autorizar, e o texto vai para uma IA gerar a resposta. Peça à criança para nunca escrever dados pessoais.</p></div>
+<div class="card"><div class="e">👨‍👩‍👧</div><h3>Fique por perto</h3><p>Acompanhe a criança enquanto ela usa a página. Dúvidas ou problemas? Fale com o responsável pelo projeto, indicado no final da página. Este é um projeto acadêmico.</p></div>
+</div>
+</section>
+<aside id="equipe" class="eq"><b>🤝 Quem fez esta página:</b> <span>💡 Idealizador: Cleiton M N Silva</span><span>🤖 Desenvolvido com o Claude (IA da Anthropic)</span><span>🧭 Líder de IA</span><span>🏗️ Arquiteto de software</span><span>🛠️ Criador de skills</span><span>📣 Marketing</span></aside>
+<footer>♟ Mundo Mágico do Xadrez · Projeto acadêmico · Idealizador: Cleiton M N Silva · Desenvolvido com o Claude (Anthropic) · Feito com carinho para pequenos campeões</footer>
+
+<button id="pf" aria-label="Perguntar ao Peão Valente"><img data-c="peao" alt="">Pergunte!</button>
+<div id="pb" hidden role="dialog" aria-label="Chat com o Peão Valente"><h3>♟ Peão Valente ajuda você</h3><div id="pl" aria-live="polite"></div><div id="pc"></div><div id="pa"><p>👨‍👩‍👧 Para digitar ou falar, um adulto precisa autorizar. O que for escrito vai para o Claude (uma IA) só para gerar a resposta. Não escreva nome, endereço nem telefone. As perguntas prontas funcionam sem isso.</p><button class="btn s" id="pok">Sou o adulto responsável e autorizo</button></div><div id="pr" hidden><input id="pi" maxlength="200" placeholder="Digite sua pergunta" aria-label="Sua pergunta"><button id="pm" hidden aria-label="Falar">🎤</button><button id="ps" aria-label="Enviar">➡</button></div></div>
+<script src="script.js"></script>
+</body>
+</html>
